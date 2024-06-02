@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Payment Gateway</title>
+  <!-- Link to Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -32,8 +34,8 @@
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
       margin-bottom: 20px;
+      transition: transform 0.3s;
     }
     .plan:hover {
       transform: translateY(-5px);
@@ -119,10 +121,10 @@
 </head>
 <body>
   <div class="container">
-    <h1>Payment Gateway</h1>
+    <h1 class="animate__animated animate__fadeInDown">Payment Gateway</h1>
     <!-- Select Your Payment Plan Section -->
     <div class="payment-plans">
-      <div class="plan premium">
+      <div class="plan premium animate__animated animate__fadeInLeft">
         <h2 style="color: #6a4c93;">Special Plan</h2>
         <p class="price">₹149</p>
         <ul class="advantages">
@@ -132,33 +134,33 @@
           <li>Lifetime content access</li>
           <li>Accessible via Telegram</li>
         </ul>
-        <button class="btn-purchase" onclick="purchasePlan()">Continue</button>
+        <button class="btn-purchase animate__animated animate__fadeInUp" onclick="purchasePlan()">Continue</button>
       </div>
     </div>
     <div class="note">
       <p><strong>Note:</strong> Enter the plan amount (149) in the amount section in the Amazon app and make the payment.</p>
     </div>
     <div class="instructions">
-      <h2>How to Pay?</h2>
-      <p>Follow these steps to make a payment using Amazon:</p>
-      <ol>
+      <h2 class="animate__animated animate__fadeInLeft">How to Pay?</h2>
+      <p class="animate__animated animate__fadeInLeft">Follow these steps to make a payment using Amazon:</p>
+      <ol class="animate__animated animate__fadeInLeft">
         <li>Go to this <a href="https://www.amazon.in/Our-Gift-You-mail-Amazon/dp/B00JPXXBOA/" target="_blank" style="color: #6a4c93;">Amazon link</a>.</li>
         <li>Enter the desired amount and select <strong>share via link</strong> option in the Delivery section.</li>
         <li>Make the payment using UPI app or any other method available by clicking the <strong>Buy Now</strong> option.</li>
         <li>Click on <strong>Share Link</strong>, after the payment was successful.</li>
         <li>Share the payment confirmation link here.</li>
       </ol>
-      <p>After completing the payment, please send the generated <strong>amazon link</strong> to us on Telegram or Instagram for further communication.</p>
+      <p class="animate__animated animate__fadeInLeft">After completing the payment, please send the generated <strong>amazon link</strong> to us on Telegram or Instagram any one for further communication.</p>
       <div class="contact-info">
         <p><strong>Telegram ID:</strong> <a href="https://t.me/Sridharroyal" target="_blank" style="color: #6a4c93;">@Sridharroyal</a></p>
-        <p><strong>Instagram ID (1):</strong> <a href="https://www.instagram.com/i_love_great_epic_ramayan/" target="_blank" style="color: #6a4c93;">@i_love_great_epic_ramayan</a></p>
-        <p><strong>Instagram ID (2):</strong> <a href="https://www.instagram.com/i_love_great_epic_mahabharat/" target="_blank" style="color: #6a4c93;">@i_love_great_epic_mahabharat</a></p>
+        <p><strong>Instagram ID:</strong> <a href="https://www.instagram.com/i_love_great_epic_ramayan/" target="_blank" style="color: #6a4c93;">@i_love_great_epic_ramayan</a></p>
+        <p><strong>Instagram ID:</strong> <a href="https://www.instagram.com/i_love_great_epic_mahabharat/" target="_blank" style="color: #6a4c93;">@i_love_great_epic_mahabharat</a></p>
       </div>
     </div>
     <div class="video-tutorial">
-      <h2>Video Tutorial</h2>
-      <p>If you're having trouble, watch this video for a step-by-step guide:</p>
-      <div class="video-container">
+      <h2 class="animate__animated animate__fadeInLeft">Video Tutorial</h2>
+      <p class="animate__animated animate__fadeInLeft">If you're having trouble, watch this video for a step-by-step guide:</p>
+      <div class="video-container animate__animated animate__fadeInLeft">
         <iframe src="video1.mp4" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
