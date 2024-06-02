@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Gateway</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      color: #6a4c93;
+    }
+    .payment-plans {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 40px;
+    }
+    .plan {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .plan:hover {
+      transform: translateY(-5px);
+    }
+    .price {
+      font-size: 24px;
+      color: #ff7043;
+    }
+    .advantages {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    .advantages li {
+      font-size: 1.1em;
+      margin: 5px 0;
+    }
+    .btn-purchase {
+      background-color: #6a4c93;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .btn-purchase:hover {
+      background-color: #5a3a73;
+    }
+    .note {
+      margin-top: 40px;
+    }
+    .note p {
+      font-size: 1.1em;
+    }
+    .instructions {
+      margin-top: 40px;
+    }
+    .instructions ol {
+      text-align: left;
+    }
+    .instructions ol li {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+    .contact-info {
+      margin-top: 20px;
+    }
+    .contact-info p {
+      font-size: 1.1em;
+    }
+    .video-tutorial {
+      margin-top: 40px;
+    }
+    .video-tutorial p {
+      font-size: 1.1em;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    @media (max-width: 768px) {
+      .plan {
+        flex-basis: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Payment Gateway</h1>
+    <!-- Select Your Payment Plan Section -->
+    <div class="payment-plans">
+      <div class="plan premium">
+        <h2>Special Plan</h2>
+        <p class="price">₹199</p>
+        <ul class="advantages">
+          <li>All episodes available</li>
+          <li>1080p HD videos</li>
+          <li>Dolby Vision audio</li>
+          <li>Lifetime content access</li>
+          <li>Accessible via Telegram</li>
+        </ul>
+        <button class="btn-purchase" onclick="purchasePlan()">Best</button>
+      </div>
+    </div>
+    <div class="note">
+      <p><strong>Note:</strong> Enter the plan amount (149) in the amount section in the Amazon app and make the payment.</p>
+    </div>
+    <div class="instructions">
+      <h2>How to Pay?</h2>
+      <p>Follow these steps to make a payment using Amazon:</p>
+      <ol>
+        <li>Go to this <a href="https://www.amazon.in/Our-Gift-You-mail-Amazon/dp/B00JPXXBOA/" target="_blank">Amazon link</a>.</li>
+        <li>Enter the desired amount and select <strong>share via link</strong> option in the Delivery section.</li>
+        <li>Make the payment using UPI app or any other method available by clicking the <strong>Buy Now</strong> option.</li>
+        <li>Click on <strong>Share Link</strong>, after the payment was successful.</li>
+        <li>Share the payment confirmation link here.</li>
+      </ol>
+      <p>After completing the payment, please send the generated <strong>amazon link</strong> to us on Telegram or Instagram for further communication.</p>
+      <div class="contact-info">
+        <p><strong>Telegram ID:</strong> <a href="https://t.me/Sridharroyal" target="_blank">@YourTelegramID</a></p>
+        <p><strong>Instagram ID:</strong> <a href="https://www.instagram.com/i_love_great_epic_mahabharat/" target="_blank">@YourInstagramID</a></p>
+      </div>
+    </div>
+    <div class="video-tutorial">
+      <h2>Video Tutorial</h2>
+      <p>If you're having trouble, watch this video for a step-by-step guide:</p>
+      <div class="video-container">
+        <iframe src="video1.mp4" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function purchasePlan() {
+      alert('Thank you for your purchase! You will receive the access details shortly.');
+      // Implement the purchase logic here, such as redirecting to a payment gateway.
+    }
+  </script>
+</body>
+</html>
